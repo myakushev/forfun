@@ -19,13 +19,22 @@ public class FuncTest {
     }
 
     @Test
-    public void checkSumm() {
+    public void checkSumm1() {
         assertEquals(12, tm.summ(11,1));
+    }
 
-        assertEquals(0, tm.summ(2,-9));
+    @Test
+    public void checkSumm2() {
+        assertEquals(0, tm.summ(2,-2));
+    }
 
+    @Test
+    public void checkSumm3() {
         assertEquals(10, tm.summ(-11,21));
+    }
 
+    @Test
+    public void checkSumm4() {
         assertEquals(-9, tm.summ(11,-20));
     }
 }
